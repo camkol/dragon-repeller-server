@@ -42,15 +42,19 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
+- [Sass](https://sass-lang.com/) - Preprocessor scripting language
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
 - Mobile-Responsive Design
 - JavaScript - Scripting language
+- [Node.js](https://nodejs.org/) - JavaScript runtime environment
+- [Node.js Docs: Filesystem](https://nodejs.org/docs/latest-v20.x/api/fs.html)
+- [Express](https://expressjs.com/) - Most-used web framework for Node.js
 
 ### What I learned
 
-Increase server startup time. Learning how to move more objects to the server. I learned that you cant transfer functions from server to app. They have top be strings first in the server and then converted to functions with the global `window` object. Also the async functions of the transfer must be called at them bottom of the app.
+Increase server startup time. Learning how to move more objects to the server. I learned that you cant transfer functions from server to app. They have top be strings first in the server and then converted to functions with the global `window` object. Also the async functions of the transfer must be called at them bottom of the app. creating database, I found a better way for separating each object.
 
 ### Continued development
 
