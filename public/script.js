@@ -21,12 +21,12 @@ let selection = [];
 let weapons, monsters, locations;
 
 const runSelection = async () => {
-  const response = await fetch("/selections");
+  const response = await fetch("/selection");
   selection = await response.json();
 
-  weapons = selection[0];
-  monsters = selection[1];
-  locations = selection[2];
+  weapons = selection.weapons;
+  monsters = selection.monsters;
+  locations = selection.locations;
 };
 
 // initialize buttons
@@ -228,4 +228,3 @@ function pick(guess) {
 }
 
 runSelection();
-consoles.log(selection);
