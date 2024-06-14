@@ -50,7 +50,7 @@ Users should be able to:
 
 ### What I learned
 
-This helped me with my perspective of function creation. I really gained the outlook of an engineer. We make tools(functions) to use.
+Increase server startup time. Learning how to move more objects to the server. I learned that you cant transfer functions from server to app. They have top be strings first in the server and then converted to functions with the global `window` object. Also the async functions of the transfer must be called at them bottom of the app.
 
 ### Continued development
 

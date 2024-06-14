@@ -29,8 +29,6 @@ const runSelection = async () => {
   locations = selection[2];
 };
 
-runSelection();
-consoles.log(selection);
 // initialize buttons
 button1.onclick = goStore;
 button2.onclick = goCave;
@@ -41,9 +39,12 @@ function update(location) {
   button1.innerText = location["button text"][0];
   button2.innerText = location["button text"][1];
   button3.innerText = location["button text"][2];
-  button1.onclick = location["button functions"][0];
-  button2.onclick = location["button functions"][1];
-  button3.onclick = location["button functions"][2];
+
+  // Translate function names to actual function references
+  button1.onclick = window[location["button functions"][0]];
+  button2.onclick = window[location["button functions"][1]];
+  button3.onclick = window[location["button functions"][2]];
+
   text.innerText = location.text;
 }
 
@@ -225,3 +226,6 @@ function pick(guess) {
     }
   }
 }
+
+runSelection();
+consoles.log(selection);
